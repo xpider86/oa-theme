@@ -1,0 +1,22 @@
+#footer-pages {
+	margin: 20px 0;
+	ul {
+		li{
+			border-right: 1px solid $link-color;
+			display: inline-block;
+			line-height: 12px;
+			list-style: none;
+			font-size: 12px;
+			padding: 0 5px;
+			a {
+				display: block;
+			}
+		}
+		li:first-child {
+			padding: 0 5px 0 0;
+		}
+		li:last-child {
+			border-right: none;
+		}
+	}
+}

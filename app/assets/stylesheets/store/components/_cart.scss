@@ -1,0 +1,31 @@
+span.price, #checkout-summary table tr[data-hook="item_total"] td:last-child strong, #checkout-summary table #summary-order-total, #order_details td.price span, #order_details td.total span, #order_summary td.price span, #order_summary td.total span, table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"], table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"], div[data-hook="inside_cart_form"] #subtotal span.order-total {
+	color: $link-color;
+}
+#billing legend, #shipping legend, #shipping_method legend, #payment legend, #order_details legend, #order_summary legend, #shipping_method .shipping-methods .shipping-method label .rate-cost {
+	color: $link-color;
+}
+.progress-steps li.current-first, .progress-steps li.current {
+	background-color: $steps-color;
+}
+.progress-steps li {
+	padding: 5px 5px 5px 25px !important;
+}
+#shipping_method .stock-location {
+	background-color: $link-color;
+}
+.progress-steps li.completed-first, .progress-steps li.completed {
+	color: $link-color;
+	a {
+		color: $link-color;
+	}
+}
+.progress-steps li.completed-first:hover, .progress-steps li.completed:hover {
+	background-color: transparent;
+	color: #555;
+	a {
+		color: #555;
+		&:hover {
+			color:#555;
+		}
+	}
+}

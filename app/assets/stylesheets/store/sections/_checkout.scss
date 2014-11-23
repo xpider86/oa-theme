@@ -1,0 +1,40 @@
+table {
+  display: block;
+  max-width: 100%;
+  overflow-y: scroll;
+  thead {
+    background-color: $link-color;
+    color: #fff;
+
+    th {
+      font-weight: 600;  
+      font-size: 14px;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        font-size: 14px;
+      }
+    }  
+  }
+}
+#order table[data-hook="order_details"] {
+  border: 1px solid #dedede;
+}
+#order .steps-data div {
+  h6 {
+    border-bottom: 1px solid #dedede;
+  }
+  .address, .delivery, .payment-info {
+    padding-top: 5px;
+    font-size: .9em;
+  }
+}
+#shipping_method table.stock-contents thead {
+  color: #404042;
+}
+.line_item_quantity {
+  padding: 7px 2px !important;
+}

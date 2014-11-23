@@ -1,0 +1,35 @@
+textarea:active, textarea:focus, input[type="date"]:active, input[type="date"]:focus, input[type="datetime"]:active, input[type="datetime"]:focus, input[type="datetime-local"]:active, input[type="datetime-local"]:focus, input[type="email"]:active, input[type="email"]:focus, input[type="month"]:active, input[type="month"]:focus, input[type="number"]:active, input[type="number"]:focus, input[type="password"]:active, input[type="password"]:focus, input[type="search"]:active, input[type="search"]:focus, input[type="tel"]:active, input[type="tel"]:focus, input[type="text"]:active, input[type="text"]:focus, input[type="time"]:active, input[type="time"]:focus, input[type="url"]:active, input[type="url"]:focus, input[type="week"]:active, input[type="week"]:focus {
+	border-color: $link-color;
+}
+
+input[type="button"], input[type="submit"],
+button, .button, a.button, input[type="number"],
+input[type="text"], input[type="email"],
+input[type="password"], input[type="tel"],
+input[type="search"], 
+textarea {
+  @include border-radius(20px);
+  @include box-shadow(none);
+  @include transition-duration(0.3s);
+  border-width: 2px;
+  padding: 7px 20px;
+}
+
+#billing, #shipping {
+	background-color: #f0f0f0;
+	@include border-radius(10px);
+}
+
+p[data-hook="use_billing"] {
+	background-color: #f0f0f0;
+}
+
+select {
+  font-size: 14px;
+}
+
+#billing, #shipping {
+  select {
+    width: 93%;
+  }  
+}
